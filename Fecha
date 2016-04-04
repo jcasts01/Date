@@ -1,1 +1,159 @@
+public class Date{
 
+  int day;
+  int month;
+  int year;
+
+  // Constructor de la clase Date
+  public Date(int day, int month, int year){
+  
+    this.day = day;
+    this.month = month;
+    this.year = year;
+
+  }
+
+  /* Geters y setters del año
+   *(el get devuelve)
+   *(el set asigna)
+   */
+  int getYear(){
+    return this.year();  
+  }
+  void setYear(){
+    year = this.year;
+  }
+  
+  /* Getters y setters del dia */
+  int getDay(){
+    return day;
+  }
+  void setDay(){
+    day = this.day;
+  }
+  
+  /* Getters y setters del mes */
+  int getMonth(){
+    return this.month;
+  }
+  void setMonth(){
+    month = this.month;
+  }
+  
+  /* Método que comprueba el año(le pasamos otra fecha distinta) */
+  boolean isSameYear(Date other){
+    if(this.year == other.getYear()){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  
+  /* Metodo que comprueba el mes
+  boolean isSameMonth(Date other){
+    if(this.month == other.getMonth()){
+      return true;
+    }else{
+      return false;
+    }  
+  }
+  
+  /* Metodo que comprueba el dia */
+  boolean isSameDay(Date other){
+    if(this.day == other.getDay()){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  
+  /* Metodo que comprueba la fecha entera */
+  boolean isSame(Date other){
+    if(this.day == other.getDay() && this.month == other.getMonth() && this.year == other.getYear()){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  
+  /* Metodo que imprime el nombre del mes */
+  String getMonthName(){
+    String mes = " ";
+    
+    switch(this.month){
+      case 1: mes = "Enero";
+        break;
+      case 2: mes = "Febrero";
+        break;
+      case 3: mes = "Marzo";
+        break;
+      case 4: mes = "Abril";
+        break;
+      case 5: mes = "Mayo";
+        break;
+      case 6: mes = "Junio";
+        break;
+      case 7: mes = "Julio";
+        break;
+      case 8: mes = "Agosto";
+        break;
+      case 9: mes = "Septiembre";
+        break;
+      case 10: mes = "Octubre";
+        break;
+      case 11: mes = "Noviembre";
+        break;
+      case 12: mes = "Diciembre";
+        break;
+      }
+    }
+    
+    return mes;
+  }
+ 
+  /* Metodo que imprime la estacion del mes */
+  String getSeasonName(){
+    String estacion = " ";
+    switch(this.month){
+      case 1: estacion = "Winter";
+        break;
+      case 2: estacion = "Winter";
+        break;
+      case 3: estacion = "Spring";
+        break;
+      case 4: estacion = "Spring";
+        break;
+      case 5: estacion = "Spring";
+        break;
+      case 6: estacion = "Summer";
+        break;
+      case 7: estacion = "Summer";
+        break;
+      case 8: estacion = "Summer";
+        break;
+      case 9: estacion = "Autumn";
+        break;
+      case 10: estacion = "Autumn";
+        break;
+      case 11: estacion = "Autumn";
+        break;
+      case 12: estacion = "Winter";
+        break;
+    }
+    
+    return estacion;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+}  
