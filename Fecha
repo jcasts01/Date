@@ -144,8 +144,12 @@ public class Date{
     return estacion;
   }
  
+  /* Metodo que imprime la fecha */
+  void printDate(){
+    System.out.println(day + month + year);
+  }
  
- 
+  
  
  
  
